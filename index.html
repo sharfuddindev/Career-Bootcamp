@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Bootcamp - Switzerland's Premier Executive & Career Coaching</title>
+    <meta name="description" content="Transform your career with Switzerland's leading boutique executive and career coaching. Accelerate, Elevate, and Executive programs designed for ambitious professionals.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        .hero-bg {
+            background-image: url('https://readdy.ai/api/search-image?query=Professional%20business%20executive%20coaching%20environment%20with%20modern%20Swiss%20office%20setting%2C%20clean%20minimalist%20background%20with%20subtle%20corporate%20elements%2C%20natural%20lighting%2C%20sophisticated%20atmosphere%2C%20premium%20workspace%20with%20mountain%20views%20through%20windows%2C%20contemporary%20furniture%2C%20inspiring%20and%20motivational%20ambiance%2C%20high-end%20consulting%20space&width=1920&height=1080&seq=hero-bg&orientation=landscape');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.95) 0%, rgba(30, 64, 175, 0.9) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="font-['Pacifico'] text-2xl text-primary font-bold">Career Bootcamp</div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#programs" class="text-gray-700 hover:text-primary transition-colors">Programs</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-primary transition-colors">Success Stories</a>
+                    <a href="#resources" class="text-gray-700 hover:text-primary transition-colors">Resources</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-secondary transition-colors whitespace-nowrap">
+                        Book Consultation
+                    </button>
+                </div>
+                
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 py-4 space-y-4">
+                <a href="#programs" class="block text-gray-700 hover:text-primary transition-colors">Programs</a>
+                <a href="#about" class="block text-gray-700 hover:text-primary transition-colors">About</a>
+                <a href="#testimonials" class="block text-gray-700 hover:text-primary transition-colors">Success Stories</a>
+                <a href="#resources" class="block text-gray-700 hover:text-primary transition-colors">Resources</a>
+                <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors">Contact</a>
+                <button class="w-full bg-primary text-white px-6 py-2 !rounded-button hover:bg-secondary transition-colors whitespace-nowrap">
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen relative">
+        <div class="gradient-overlay min-h-screen flex items-center">
+            <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl">
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                        Switzerland's Premier Executive & Career Coaching
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                        Transform your career trajectory with our boutique coaching programs. From emerging leaders to C-suite executives, we accelerate professional growth through proven methodologies and personalized guidance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-50 transition-colors whitespace-nowrap">
+                            Explore Programs
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 !rounded-button font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                            Book Free Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-gray-600 text-lg">Trusted by professionals from leading Swiss companies</p>
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-bank-fill text-2xl text-gray-500"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">UBS</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-building-fill text-2xl text-gray-500"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">Nestlé</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-medicine-bottle-fill text-2xl text-gray-500"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">Novartis</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-bank-fill text-2xl text-gray-500"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">Credit Suisse</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 flex items-center justify-center">
+                        <i class="ri-building-2-fill text-2xl text-gray-500"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">ABB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Overview -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Choose Your Career Acceleration Path</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our three signature programs are designed to meet you where you are in your career journey and propel you to where you want to be.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Accelerate Program -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-rocket-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Accelerate</h3>
+                    <p class="text-gray-600 mb-6">
+                        For emerging leaders ready to fast-track their career progression. Master leadership fundamentals and strategic thinking.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Leadership development
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Strategic communication
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Career planning
+                        </li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-secondary transition-colors whitespace-nowrap">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Elevate Program -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-primary">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-arrow-up-line text-2xl text-primary"></i>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <h3 class="text-2xl font-bold text-gray-900">Elevate</h3>
+                        <span class="ml-3 bg-primary text-white px-3 py-1 text-sm rounded-full">Most Popular</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">
+                        For mid-level managers transitioning to senior leadership roles. Develop executive presence and advanced management skills.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Executive presence
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Team leadership
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Strategic decision making
+                        </li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-secondary transition-colors whitespace-nowrap">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Executive Program -->
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="ri-crown-line text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Executive</h3>
+                    <p class="text-gray-600 mb-6">
+                        For C-suite executives and senior leaders. Master organizational transformation and visionary leadership.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Visionary leadership
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Organizational change
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <div class="w-5 h-5 flex items-center justify-center mr-3">
+                                <i class="ri-check-line text-green-500"></i>
+                            </div>
+                            Board readiness
+                        </li>
+                    </ul>
+                    <button class="w-full bg-primary text-white py-3 !rounded-button font-semibold hover:bg-secondary transition-colors whitespace-nowrap">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Why Career Bootcamp Leads Switzerland's Executive Coaching</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        With over 15 years of collective experience and a proven track record of transforming careers across Switzerland's most prestigious companies, our team combines deep industry knowledge with cutting-edge coaching methodologies.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <i class="ri-award-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Proven Results</h4>
+                                <p class="text-gray-600">95% of our clients achieve their career goals within 12 months of program completion.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <i class="ri-team-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Expert Team</h4>
+                                <p class="text-gray-600">Certified coaches with C-suite experience from Fortune 500 companies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
+                                <i class="ri-global-line text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Swiss Excellence</h4>
+                                <p class="text-gray-600">Deep understanding of Swiss business culture and corporate landscape.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img 
+                        src="https://readdy.ai/api/search-image?query=Professional%20diverse%20team%20of%20executive%20coaches%20in%20modern%20Swiss%20office%20environment%2C%20confident%20business%20professionals%20in%20elegant%20attire%2C%20collaborative%20workspace%20with%20natural%20lighting%2C%20sophisticated%20corporate%20setting%20with%20mountain%20backdrop%2C%20premium%20consulting%20atmosphere%2C%20multicultural%20leadership%20team&width=600&height=700&seq=about-team&orientation=portrait"
+                        alt="Career Bootcamp Team"
+                        class="rounded-xl shadow-lg w-full h-auto object-cover object-top"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Success Stories from Our Clients</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Hear from executives who have transformed their careers through our coaching programs.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img 
+                            src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20confident%20female%20executive%20in%20business%20attire%2C%20Swiss%20corporate%20leader%2C%20elegant%20professional%20portrait%2C%20modern%20office%20background%2C%20sophisticated%20business%20woman%2C%20premium%20corporate%20photography%20style&width=80&height=80&seq=testimonial-1&orientation=squarish"
+                            alt="Sarah Mueller"
+                            class="w-16 h-16 rounded-full object-cover object-top mr-4"
+                        >
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sarah Mueller</h4>
+                            <p class="text-gray-600 text-sm">VP Operations, Nestlé</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "The Elevate program transformed my leadership approach completely. Within 6 months, I was promoted to VP level and now lead a team of 150+ professionals."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img 
+                            src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20confident%20male%20executive%20in%20business%20suit%2C%20Swiss%20banking%20professional%2C%20elegant%20corporate%20portrait%2C%20modern%20office%20environment%2C%20sophisticated%20business%20leader%2C%20premium%20corporate%20photography%20style&width=80&height=80&seq=testimonial-2&orientation=squarish"
+                            alt="Marcus Weber"
+                            class="w-16 h-16 rounded-full object-cover object-top mr-4"
+                        >
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Marcus Weber</h4>
+                            <p class="text-gray-600 text-sm">Managing Director, UBS</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Career Bootcamp's Executive program prepared me for board positions. The strategic insights and leadership development were invaluable for my C-suite transition."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img 
+                            src="https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20confident%20female%20technology%20executive%2C%20Swiss%20tech%20industry%20leader%2C%20modern%20business%20portrait%2C%20contemporary%20office%20setting%2C%20innovative%20business%20professional%2C%20premium%20corporate%20photography%20style&width=80&height=80&seq=testimonial-3&orientation=squarish"
+                            alt="Lisa Zimmermann"
+                            class="w-16 h-16 rounded-full object-cover object-top mr-4"
+                        >
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Lisa Zimmermann</h4>
+                            <p class="text-gray-600 text-sm">Head of Innovation, ABB</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "The Accelerate program gave me the confidence and skills to lead cross-functional teams. I've since been promoted twice and now head our innovation division."
+                    </p>
+                    <div class="flex text-yellow-400">
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                        <i class="ri-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Stay Ahead with Executive Insights</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join 5,000+ Swiss executives receiving our weekly LinkedIn newsletter with career advancement strategies, leadership insights, and industry trends.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    class="flex-1 px-4 py-3 rounded-lg border-none text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                >
+                <button class="bg-white text-primary px-6 py-3 !rounded-button font-semibold hover:bg-gray-50 transition-colors whitespace-nowrap">
+                    Subscribe
+                </button>
+            </div>
+            
+            <p class="text-blue-200 text-sm mt-4">
+                No spam. Unsubscribe anytime. Read our <a href="#" class="underline hover:text-white">privacy policy</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Resources Hub -->
+    <section id="resources" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Resources & Insights</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Access our latest thinking on executive leadership, career development, and Swiss business trends.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img 
+                        src="https://readdy.ai/api/search-image?query=Modern%20Swiss%20business%20leadership%20concept%2C%20executive%20boardroom%20meeting%2C%20professional%20corporate%20environment%2C%20strategic%20planning%20session%2C%20contemporary%20office%20setting%20with%20mountain%20views%2C%20sophisticated%20business%20atmosphere&width=400&height=250&seq=blog-1&orientation=landscape"
+                        alt="Leadership Trends"
+                        class="w-full h-48 object-cover object-top"
+                    >
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold">Leadership</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">5 Leadership Trends Shaping Swiss Corporations in 2025</h3>
+                        <p class="text-gray-600 mb-4">Discover the emerging leadership paradigms that are transforming how Swiss executives lead in the digital age.</p>
+                        <a href="#" class="text-primary font-semibold hover:text-secondary transition-colors">Read More →</a>
+                    </div>
+                </article>
+                
+                <article class="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img 
+                        src="https://readdy.ai/api/search-image?query=Professional%20career%20development%20concept%2C%20executive%20coaching%20session%2C%20modern%20Swiss%20office%20environment%2C%20business%20mentoring%20meeting%2C%20sophisticated%20corporate%20setting%2C%20premium%20consulting%20atmosphere&width=400&height=250&seq=blog-2&orientation=landscape"
+                        alt="Career Acceleration"
+                        class="w-full h-48 object-cover object-top"
+                    >
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold">Career Development</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">The Executive's Guide to Career Acceleration</h3>
+                        <p class="text-gray-600 mb-4">Learn the proven strategies that fast-track careers from senior management to C-suite positions.</p>
+                        <a href="#" class="text-primary font-semibold hover:text-secondary transition-colors">Read More →</a>
+                    </div>
+                </article>
+                
+                <article class="bg-gray-50 rounded-xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img 
+                        src="https://readdy.ai/api/search-image?query=Swiss%20business%20networking%20event%2C%20executive%20professionals%20networking%2C%20elegant%20corporate%20gathering%2C%20modern%20conference%20setting%2C%20sophisticated%20business%20professionals%2C%20premium%20networking%20atmosphere&width=400&height=250&seq=blog-3&orientation=landscape"
+                        alt="Networking Strategies"
+                        class="w-full h-48 object-cover object-top"
+                    >
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold">Networking</span>
+                        <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">Building Your Executive Network in Switzerland</h3>
+                        <p class="text-gray-600 mb-4">Master the art of strategic networking to unlock new opportunities and advance your career.</p>
+                        <a href="#" class="text-primary font-semibold hover:text-secondary transition-colors">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Accelerate Your Career?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Join Switzerland's most successful executives who have transformed their careers with Career Bootcamp. Book your free consultation today.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 !rounded-button font-semibold hover:bg-gray-50 transition-colors whitespace-nowrap">
+                    Book Free Consultation
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 !rounded-button font-semibold hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                    Download Program Guide
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="font-['Pacifico'] text-2xl text-primary font-bold mb-4">Career Bootcamp</div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Switzerland's premier executive and career coaching boutique, transforming careers and developing leaders across the nation's top corporations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-twitter-fill text-xl"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="ri-mail-fill text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Programs</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Accelerate</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Elevate</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Executive</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Corporate Training</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Company</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Success Stories</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">
+                    © 2025 Career Bootcamp Switzerland. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script id="mobile-menu-toggle">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        });
+    </script>
+
+    <script id="smooth-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="newsletter-form">
+        document.addEventListener('DOMContentLoaded', function() {
+            const newsletterForm = document.querySelector('section input[type="email"]');
+            const subscribeBtn = newsletterForm.nextElementSibling;
+            
+            subscribeBtn.addEventListener('click', function() {
+                const email = newsletterForm.value.trim();
+                
+                if (!email) {
+                    alert('Please enter your email address');
+                    return;
+                }
+                
+                if (!email.includes('@')) {
+                    alert('Please enter a valid email address');
+                    return;
+                }
+                
+                alert('Thank you for subscribing! You will receive our weekly insights soon.');
+                newsletterForm.value = '';
+            });
+            
+            newsletterForm.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    subscribeBtn.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
